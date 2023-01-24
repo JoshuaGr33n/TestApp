@@ -97,7 +97,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>hhhh</td>
+                    <td>{{$total_value_numbers_sum}}</td>
                     <td> </td>
 
                 </tr>

@@ -21,15 +21,15 @@ class AppController extends Controller
 
         $product = AppTest::orderBy('id', 'desc')->get();
 
-        $total_quantity = 0;
-        $total_price = 0;
+
+        $r = 0;
         foreach ($product as $key => $d) {
 
-            $total_quantity += $d['quantity'];
-            $total_price += $d['price'];
+            $t = $d['quantity'] * $d['price'];
+            $r += $t;
         }
-        $total_value_numbers_sum = $total_quantity + $total_price;
-        return view('index', ['data' => $product, 'total_value_numbers_sum' => $total_value_numbers_sum]);
+        $total_value_numbers_sum = $total_quantity * $total_price;
+        return view('index', ['data' => $product, 'total_value_numbers_sum' => $r]);
     }
 
     /**
