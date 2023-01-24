@@ -1,0 +1,38 @@
+
+    .main {
+        width: 80%;
+        margin: auto;
+    }
+
+    .form-wrapper {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .table {
+        margin-top: 30px;
+    }
+
+    .todoListContainer {
+        width: 450px;
+        margin: auto;
+    }
+
+    .heading {
+        background: #e6e6e6;
+        padding: 10px;
+    }
+
+    #title {
+        text-align: center
+    }
+
+    .green {
+        color: green
+    }
+
+    .red {
+        color: red
+    }
